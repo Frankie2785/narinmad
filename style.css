@@ -1,0 +1,23 @@
+/* style.css */
+body {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#icon {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+#click-count {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
