@@ -1,20 +1,14 @@
-// scripts.js
-let clickCount = 0;
-
-// Load the previous click count from localStorage or start from 0
-window.onload = () => {
-  clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
-  updateClickCountDisplay();
-};
-
-// Function to handle image click
-document.getElementById('icon').addEventListener('click', () => {
-  clickCount++;
-  localStorage.setItem('clickCount', clickCount);
-  updateClickCountDisplay();
-});
-
-// Function to update the display of click count
-function updateClickCountDisplay() {
-  document.getElementById('click-count').innerText = `narin has been mad for ${clickCount} times`;
-}
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
+  <title>Click Tracking Page</title>
+</head>
+<body>
+  <div id="click-count">narin has been mad for 0 times</div>
+  <img id="icon" src="icon.png" alt="Icon">
+</body>
+</html>
